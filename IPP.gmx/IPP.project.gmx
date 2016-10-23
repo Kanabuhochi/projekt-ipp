@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_gracz</sprite>
     <sprite>sprites\spr_ziemia</sprite>
+    <sprite>sprites\spr_gold</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tlo</background>
@@ -16,6 +17,7 @@
   <objects name="objects">
     <object>objects\obj_gracz</object>
     <object>objects\obj_ziemia</object>
+    <object>objects\obj_gold</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
