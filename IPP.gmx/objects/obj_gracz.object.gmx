@@ -70,6 +70,10 @@ if (place_meeting(x,y+1,obj_ziemia))
     v_spd = key_jump * -jump_spd;
 }
 
+if (key_jump) &amp;&amp; (place_meeting(x+1,y,obj_ziemia) || place_meeting(x-1,y,obj_ziemia))
+{
+    v_spd = -jump_spd;
+}
 
 //Kolizja
 
