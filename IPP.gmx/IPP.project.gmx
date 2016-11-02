@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_gracz</sprite>
+    <sprite>sprites\spr_platforma</sprite>
     <sprite>sprites\spr_ziemia</sprite>
     <sprite>sprites\spr_gold</sprite>
   </sprites>
@@ -18,6 +19,7 @@
     <object>objects\obj_gracz</object>
     <object>objects\obj_ziemia</object>
     <object>objects\obj_gold</object>
+    <object>objects\obj_platforma</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
