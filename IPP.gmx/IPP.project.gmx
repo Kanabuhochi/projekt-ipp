@@ -10,18 +10,27 @@
     <sprite>sprites\spr_platforma</sprite>
     <sprite>sprites\spr_ziemia</sprite>
     <sprite>sprites\spr_gold</sprite>
+    <sprite>sprites\spr_star</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tlo</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_menu.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_menu</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_gracz</object>
     <object>objects\obj_ziemia</object>
     <object>objects\obj_gold</object>
     <object>objects\obj_platforma</object>
+    <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_level1</room>
   </rooms>
   <help>
