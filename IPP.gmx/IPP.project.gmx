@@ -17,6 +17,8 @@
     <sprite>sprites\spr_gracz_run</sprite>
     <sprite>sprites\spr_gracz_jump</sprite>
     <sprite>sprites\spr_gracz_fall</sprite>
+    <sprite>sprites\sprite11</sprite>
+    <sprite>sprites\spr_enemy_wolf</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tlo</background>
@@ -42,10 +44,11 @@
     <object>objects\obj_options</object>
     <object>objects\obj_back</object>
     <object>objects\obj_controls</object>
+    <object>objects\obj_enemy_wolf</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
     <room>rooms\rm_level1</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_credits</room>
     <room>rooms\rm_controls</room>

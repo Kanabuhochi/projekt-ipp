@@ -51,12 +51,8 @@
             <string>if (instance_exists(obj_gracz))
 {
 
-    if round(obj_gracz.y + (obj_gracz.sprite_height) &gt; y+1) mask_index = -1;
+    if round(obj_gracz.y + (obj_gracz.sprite_height/2) &gt; y+1) mask_index = -1;
     else mask_index = spr_platforma;
-
-
-
-
 }
 </string>
           </argument>
