@@ -13,6 +13,10 @@
     <sprite>sprites\spr_star</sprite>
     <sprite>sprites\spr_controls</sprite>
     <sprite>sprites\spr_instructions</sprite>
+    <sprite>sprites\spr_gracz_idle</sprite>
+    <sprite>sprites\spr_gracz_run</sprite>
+    <sprite>sprites\spr_gracz_jump</sprite>
+    <sprite>sprites\spr_gracz_fall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tlo</background>
