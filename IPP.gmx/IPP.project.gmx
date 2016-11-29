@@ -17,13 +17,13 @@
     <sprite>sprites\spr_gracz_run</sprite>
     <sprite>sprites\spr_gracz_jump</sprite>
     <sprite>sprites\spr_gracz_fall</sprite>
-    <sprite>sprites\sprite11</sprite>
     <sprite>sprites\spr_enemy_wolf</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tlo</background>
     <background>background\bg_menu</background>
     <background>background\bg_options</background>
+    <background>background\bg_level</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

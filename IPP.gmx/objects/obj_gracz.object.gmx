@@ -70,6 +70,13 @@ if (place_meeting(x,y+1,obj_ziemia))
     v_spd = key_jump * -jump_spd;
 }
 
+if (place_meeting(x,y-2,obj_ziemia))
+{
+    v_spd = 1;
+}
+
+
+
 if (key_jump) &amp;&amp; (place_meeting(x+1,y,obj_ziemia) || place_meeting(x-1,y,obj_ziemia))
 {
     v_spd = -jump_spd;
@@ -95,8 +102,17 @@ if(place_meeting(x,y+v_spd,obj_ziemia))
     }
     v_spd = 0;
 }
-y += v_spd;
 
+if(place_meeting(x,y+v_spd,obj_platforma))
+{
+    while(!place_meeting(x,y+sign(v_spd),obj_platforma))
+    {
+        y += sign(v_spd);
+    }
+    v_spd = 0;
+}
+
+y += v_spd;
 if (move!=0) image_xscale = move;
 if (place_meeting(x,y+1,obj_ziemia))
 {
