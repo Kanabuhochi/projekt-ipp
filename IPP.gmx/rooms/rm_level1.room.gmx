@@ -172,7 +172,7 @@
     <instance objName="obj_gold" x="416" y="656" name="inst_EEAAC230" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gold" x="432" y="656" name="inst_E95794CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_platforma" x="424" y="312" name="inst_B5002569" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_wolf" x="960" y="704" name="inst_2748DED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_wolf" x="600" y="336" name="inst_2748DED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gracz" x="344" y="336" name="inst_5F5ABB65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ziemia" x="304" y="368" name="inst_14EB208D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ziemia" x="336" y="368" name="inst_B986AB11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -194,6 +194,7 @@
     <instance objName="obj_ziemia" x="160" y="736" name="inst_35D748A4" locked="0" code="" scaleX="5.25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ziemia" x="560" y="232" name="inst_40FD3100" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ziemia" x="336" y="160" name="inst_A9A7EC45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_bat" x="120" y="160" name="inst_4CCC6149" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
