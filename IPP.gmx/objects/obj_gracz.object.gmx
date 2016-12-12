@@ -56,14 +56,26 @@ score = 0;
           <argument>
             <kind>1</kind>
             <string>///Ruch
-
 key_right = keyboard_check(ord("D"));
 key_left = -keyboard_check(ord("A"));
 key_jump = keyboard_check_pressed(ord("W"));
 
 move = key_left + key_right;
 h_spd = move * move_spd;
+if(place_meeting(x,y,obj_door_closed))
+{
+    if(obj_lever.turned == 0)
+    {
+    }
+    else if(obj_lever.turned == 1)
+    {
+        room_goto_next();
+    }
+}
+
 if (v_spd &lt; 10) v_spd += graw;
+
+
 
 if (place_meeting(x,y+1,obj_ziemia))
 {
@@ -75,29 +87,36 @@ if (place_meeting(x,y-2,obj_ziemia))
     v_spd = 1;
 }
 
-
-
 if (key_jump) &amp;&amp; (place_meeting(x+1,y,obj_ziemia) || place_meeting(x-1,y,obj_ziemia))
 {
     v_spd = -jump_spd;
 }
 
 //Kolizja
-
 if(place_meeting(x+h_spd,y,obj_ziemia))
 {
-    while(!place_meeting(x+sign(h_spd),y,obj_ziemia))
+    push = 0;
+    while(place_meeting(x+h_spd,y-push,obj_ziemia))&amp;&amp; push &lt;= abs(1*h_spd) push += 1;
+    if(place_meeting(x+h_spd,y-push,obj_ziemia))
     {
-        x += sign(h_spd);
+        while(!place_meeting(x+sign(h_spd),y,obj_ziemia))
+        {
+            x += sign(h_spd);
+        }
+        h_spd = 0;
     }
-    h_spd = 0;
+    else
+    {
+        y -= push;
+    }
 }
-x += h_spd;
+
 
 if(place_meeting(x,y+v_spd,obj_ziemia))
 {
     while(!place_meeting(x,y+sign(v_spd),obj_ziemia))
     {
+    
         y += sign(v_spd);
     }
     v_spd = 0;
@@ -111,7 +130,7 @@ if(place_meeting(x,y+v_spd,obj_platforma))
     }
     v_spd = 0;
 }
-
+x += h_spd;
 y += v_spd;
 if (move!=0) image_xscale = move;
 if (place_meeting(x,y+1,obj_ziemia))

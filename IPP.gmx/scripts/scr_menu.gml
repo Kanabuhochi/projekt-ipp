@@ -2,7 +2,7 @@ switch(position)
 {
     case 0:
     {
-        room_goto_next();
+        room_goto(rm_level1);
         break;
     }
     case 1:

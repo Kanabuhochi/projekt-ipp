@@ -9,6 +9,7 @@
     <sprite>sprites\spr_gracz</sprite>
     <sprite>sprites\spr_platforma</sprite>
     <sprite>sprites\spr_ziemia</sprite>
+    <sprite>sprites\spr_ramp</sprite>
     <sprite>sprites\spr_gold</sprite>
     <sprite>sprites\spr_star</sprite>
     <sprite>sprites\spr_controls</sprite>
@@ -19,6 +20,9 @@
     <sprite>sprites\spr_gracz_fall</sprite>
     <sprite>sprites\spr_enemy_wolf</sprite>
     <sprite>sprites\spr_enemy_bat</sprite>
+    <sprite>sprites\spr_lever</sprite>
+    <sprite>sprites\spr_door_closed</sprite>
+    <sprite>sprites\spr_door_open</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tlo</background>
@@ -38,6 +42,7 @@
   <objects name="objects">
     <object>objects\obj_gracz</object>
     <object>objects\obj_ziemia</object>
+    <object>objects\obj_ramp</object>
     <object>objects\obj_gold</object>
     <object>objects\obj_platforma</object>
     <object>objects\obj_menu</object>
@@ -47,13 +52,17 @@
     <object>objects\obj_controls</object>
     <object>objects\obj_enemy_wolf</object>
     <object>objects\obj_enemy_bat</object>
+    <object>objects\obj_lever</object>
+    <object>objects\obj_door_closed</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_level1</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_credits</room>
     <room>rooms\rm_controls</room>
+    <rooms name="LEVELS">
+      <room>rooms\rm_level1</room>
+    </rooms>
     <room>rooms\rm_audio</room>
   </rooms>
   <help>
